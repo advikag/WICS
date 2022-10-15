@@ -1,0 +1,94 @@
+div#container
+{
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+
+}
+
+div#blockContainer
+{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#mario
+{
+    width: 300px;
+    bottom: 50px;
+    right : 0px;
+
+}
+
+#block
+{
+    width: 100px;
+    z-index: 2;
+    opacity: 1;
+    animation: jump 0.6s linear infinite alternate;
+
+}
+@keyframes jump
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translate(-10px);
+
+    }
+    100%
+    {
+        tranform: translate(0px);
+    }
+
+ } 
+
+#coin
+{
+    width : 70px;
+    z-index: 1;
+    position: relative;
+    right: 85px;
+    bottom: 90px;
+    animation: coin 0.9s linear infinite forwards;
+
+}
+
+
+
+ @keyframes coin
+ {
+    0%
+    {
+        tranform: translate(0px)
+        rotate(0deg);
+        opacity: 1;
+
+    }
+    50%
+    {
+        transform: translate(-100 px) rotateY(1800deg);
+        opacity: 0;
+
+    }
+    100%
+    {
+        tranform: translateY(-100px) rotatet(360deg);
+        opacity: 0;
+
+    }
+ }
+ 
+
+
+
+
